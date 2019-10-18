@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> If Statments JavaScript</title>
+</head>
+
+<body>
+<p>
+How Many Fingures am I holding?
+</p>
+
+<input type="text" id="randomNum">
+
+
+<button id="myRandomCount">
+Guess!
+</button>
+
+<script type="text/javascript">
+
+document.getElementById("myRandomCount").onclick = function() {
+
+var myRandomNumber = Math.floor(Math.random() * (6 - 2 + 1));
+
+var randomNum = 4;
+
+myRandomNumber = document.getElementById("randomNum").value;
+
+if (myRandomNumber == randomNum) {
+
+    alert("You got it! 😊")
+
+} else {
+
+    alert("Ooops try again. 😞")
+}
+
+}
+
+</script>
+
+</body>
+</html>
